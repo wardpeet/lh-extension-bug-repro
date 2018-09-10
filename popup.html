@@ -10,11 +10,15 @@
       width: 300px;
       height: 100px;
     }
+    button {
+      display: block;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
-<button id="github">Run Github Bug</button>
-<div id="error"></div>
+<button id="github" disabled>Attach debugger</button>
+<div id="status"></div>
 <script src="popup.js"></script>
 </body>
 </html>
