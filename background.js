@@ -50,5 +50,5 @@ async function goOfflineAndReload(tabId) {
   });
   
   await sendCommand('Page.enable');
-  await sendCommand('Page.navigate', {url: 'https://www.github.com'});
+  await sendCommand('Page.reload', {ignoreCache: true});
 }
