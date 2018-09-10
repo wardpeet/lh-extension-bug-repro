@@ -1,0 +1,28 @@
+{
+  "name": "Lighthouse Bug Repro",
+  "description": "Github detach bug.",
+  "version": "0.1",
+  "manifest_version": 2,
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": true
+	},
+  "icons": {
+    "16": "images/lh_logo_bg.png",
+    "128": "images/lh_logo_bg.png"
+  },
+  "permissions": [
+    "debugger",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "38": "images/lh_logo_icon.png"
+    },
+    "default_title": "LH Github Bug",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'none'"
+}
